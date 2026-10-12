@@ -34,11 +34,12 @@ def read_root():
     return {"message": "FastAPI backend is running"}
 
 
-@app.get("/video/{filename}")
-async def get_video(filename: str):
+@app.get("/picture/{filename}")
+async def get_picture(filename: str):
     # Adjust path to your video folder
     #/home/julius/Desktop/manim-main/derivatives-app/backend/2x7
-    path = f"/home/julius/Desktop/manim-main/derivatives-app/backend/video/{filename}/images/derivatives_simple/DerivativesManimCE_v0.22.0.png"
+    path = f"/home/julius/Desktop/manim-backend/derivatives-app/backend/video/{filename}/images/derivatives_simple/Derivatives_ManimCE_v0.22.0.png"
+    #derivatives-app/backend/video/2x2/images/derivatives_simple/Derivatives_ManimCE_v0.22.0.png
     
     mime_type, _ = mimetypes.guess_type(path)
     return FileResponse(
@@ -54,11 +55,11 @@ async def receive_text(data: dict):
     
     user_text = data.get("text")
     print(user_text)
-    render_picture(user_text)
+    finished=await render_picture(user_text)
     return {"received": user_text, "length": len(user_text)}
 
 
-def render_picture(text):
+async def render_picture(text):
     subprocess.run(
         [
             sys.executable,
@@ -72,4 +73,45 @@ def render_picture(text):
         input=f"{text}\n",
         text=True,
         check=True,
+    )
+    return "Dings"
+
+
+@app.post("/send-text-video")
+async def receive_text_video(data: dict):
+    
+    user_text = data.get("text")
+    print(user_text)
+    finished=await render_video(user_text)
+    return {"received": user_text, "length": len(user_text)}
+
+async def render_video(text):
+    subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "manim",
+           "--media_dir","./video/"+str(text) ,
+            "-qh",
+            str("useful_derivatives.py"),
+            "Derivatives",
+        ],
+        input=f"{text}\n",
+        text=True,
+        check=True,
+    )
+    return "Dings"
+
+@app.get("/video/{filename}")
+async def get_video(filename: str):
+    # Adjust path to your video folder
+    #/home/julius/Desktop/manim-main/derivatives-app/backend/2x7
+    path = f"/home/julius/Desktop/manim-main/derivatives-app/backend/video/{filename}/videos/useful_derivatives/1080p60/Derivatives.mp4"
+    #derivatives-app/backend/video/2x2/images/derivatives_simple/Derivatives_ManimCE_v0.22.0.png
+    
+    mime_type, _ = mimetypes.guess_type(path)
+    return FileResponse(
+        path,
+        media_type=mime_type or "video/mp4",
+        headers={"Accept-Ranges": "bytes"},
     )

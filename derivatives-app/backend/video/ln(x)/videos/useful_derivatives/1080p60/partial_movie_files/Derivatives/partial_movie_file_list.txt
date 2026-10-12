@@ -1,0 +1,13 @@
+# This file records the segment order used by Manim.
+file 'file:/home/julius/Desktop/manim-main/derivatives-app/backend/video/ln(x)/videos/useful_derivatives/1080p60/partial_movie_files/Derivatives/11137f9af88638b03ff278c021bb629094e60fe77f0e5992969a00da61293439.mp4'
+file 'file:/home/julius/Desktop/manim-main/derivatives-app/backend/video/ln(x)/videos/useful_derivatives/1080p60/partial_movie_files/Derivatives/5ca58db3f74f98fe7c96ed6892210748be6d9d4bf79113e2deed957f1f251473.mp4'
+file 'file:/home/julius/Desktop/manim-main/derivatives-app/backend/video/ln(x)/videos/useful_derivatives/1080p60/partial_movie_files/Derivatives/e8a60eacbffa2ab9d7d1d209f39c61af46892869fbc90664a761827a8fb60037.mp4'
+file 'file:/home/julius/Desktop/manim-main/derivatives-app/backend/video/ln(x)/videos/useful_derivatives/1080p60/partial_movie_files/Derivatives/1357a410621336545e1b431edb3e24be8b635cecdb5f9895570d6352353cb6a3.mp4'
+file 'file:/home/julius/Desktop/manim-main/derivatives-app/backend/video/ln(x)/videos/useful_derivatives/1080p60/partial_movie_files/Derivatives/216342c6af4a54b6f00930fe23f916e88fc865f7977ddc17192a133acac54796.mp4'
+file 'file:/home/julius/Desktop/manim-main/derivatives-app/backend/video/ln(x)/videos/useful_derivatives/1080p60/partial_movie_files/Derivatives/61eebe213f508767a6e941b5f928e661152ae147ac476a5da431fb07b2c1ce54.mp4'
+file 'file:/home/julius/Desktop/manim-main/derivatives-app/backend/video/ln(x)/videos/useful_derivatives/1080p60/partial_movie_files/Derivatives/a39af2f350f56a5cafb1175d219459cb45fbb3487eae73ff7f6015dd358b2a81.mp4'
+file 'file:/home/julius/Desktop/manim-main/derivatives-app/backend/video/ln(x)/videos/useful_derivatives/1080p60/partial_movie_files/Derivatives/0af96ff731d6257febe23805560a0fa8c86a4ab6824019258ecaa964f5cc206a.mp4'
+file 'file:/home/julius/Desktop/manim-main/derivatives-app/backend/video/ln(x)/videos/useful_derivatives/1080p60/partial_movie_files/Derivatives/eb5c1c0cf8582de69b047a6fab7dddb7923140597e056a49eccae7f9132d14b0.mp4'
+file 'file:/home/julius/Desktop/manim-main/derivatives-app/backend/video/ln(x)/videos/useful_derivatives/1080p60/partial_movie_files/Derivatives/fcd20bc394545ae40182eae7c722860e7a6916d54da31380e873946ebb475e5f.mp4'
+file 'file:/home/julius/Desktop/manim-main/derivatives-app/backend/video/ln(x)/videos/useful_derivatives/1080p60/partial_movie_files/Derivatives/27b570a043d1eb8f2b0535256c53c34f7874e23e1ab453c88d248e767bbadc00.mp4'
+file 'file:/home/julius/Desktop/manim-main/derivatives-app/backend/video/ln(x)/videos/useful_derivatives/1080p60/partial_movie_files/Derivatives/34c4d8cfb9d22620f08c57df9a4c34425835dd8e50e0b07b5a880ea2885a45fd.mp4'
