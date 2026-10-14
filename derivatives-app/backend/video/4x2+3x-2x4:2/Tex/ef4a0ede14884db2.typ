@@ -1,0 +1,4 @@
+#set page(width: auto, height: auto, margin: 0pt, fill: none)
+#set text(size: 10pt)
+
+$ f'(x)=8.0*x+3.0-84.0*x^41 $

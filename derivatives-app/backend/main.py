@@ -101,12 +101,13 @@ async def render_video(text):
         check=True,
     )
     return "Dings"
-
+#/home/julius/Desktop/manim-main/derivatives-app/backend/video/8x7+2/videos/useful_derivatives/1080p60/Derivatives.mp4
+#/home/julius/Desktop/manim-backend/derivatives-app/backend/video/8x7+2/videos/useful_derivatives/1080p60/Derivatives.mp4' 
 @app.get("/video/{filename}")
 async def get_video(filename: str):
     # Adjust path to your video folder
     #/home/julius/Desktop/manim-main/derivatives-app/backend/2x7
-    path = f"/home/julius/Desktop/manim-main/derivatives-app/backend/video/{filename}/videos/useful_derivatives/1080p60/Derivatives.mp4"
+    path = f"/home/julius/Desktop/manim-backend/derivatives-app/backend/video/{filename}/videos/useful_derivatives/1080p60/Derivatives.mp4"
     #derivatives-app/backend/video/2x2/images/derivatives_simple/Derivatives_ManimCE_v0.22.0.png
     
     mime_type, _ = mimetypes.guess_type(path)

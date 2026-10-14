@@ -75,7 +75,11 @@ class Derivatives(Scene):
                 
         
         self.create_functions(coefficients,powers)
-
+        print(final_coefficients)
+        print(final_powers)
+        print(zeros_x_coords)
+        print(extreme_points)
+        print(turning_points)
          # find value range of axes based on zeros and y coordinates, so you can see all the functions and all the interesting points
         highest_x_value=0
         lowest_x_value=0
